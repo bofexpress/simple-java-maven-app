@@ -14,7 +14,6 @@ pipeline {
         stage('Test') { 
             steps {
                 sh 'mvn test' 
-                sh 'docker version'
             }
             post {
                 always {
